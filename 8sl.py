@@ -4,11 +4,35 @@ def run1(a=2,i=0):
         i+=1
     print("Days",i)
 run1()
+
+
+
+def run2():
+  sum=4
+  num=1
+  IsSimple=True
+  day = 0
+  while sum<1000:
+      IsSimple = False
+      while not IsSimple:
+          num += 1
+          IsSimple = True
+          for i in range(2,sum//2):
+              if num%i==0:
+                  IsSimple = False
+                  break
+      sum += num
+      print(sum, num)
+      day += 1
+  print("Days", day)
+run2()
+
 def run2(a=2):
-    i=0
+    j=0
     while a<=1000:
+
         for i in range(1,a):
-            i+=1
+            j+=1
             if a%i==0:
                 a+=a
             else:
