@@ -1,19 +1,12 @@
 def money1(a,x,b,y,z):
     i=0
     j=0
-    if a*x+b*y<=z:
+    if a*x+b*y<z:
         print("Нельзя")
-    elif a*x==z:
-        print("Можно")
-    elif b*y==z:
-        print("Можно")
-    else:
-        i+=1
-        j+=1
-        for i in range(a):
-            for j in range(b):
-                if i*x+j*y==z:
-                    print("Можно")
+    for i in range(a):
+        for j in range(b):
+            if i*x+j*y==z:
+                print("Можно")
 money1(5,4,6,7,19)
 def additional2(number,count=1):
     number//=10
