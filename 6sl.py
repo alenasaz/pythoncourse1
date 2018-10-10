@@ -15,5 +15,5 @@ def diff_types_all(N):
     dictor4={str(i):i for i in dictor2}
     print(dictor4)
     #не получается
-    #print(dictor4.keys()[0:round(len(dictor4)/3)])
+    print(dictor4[0:int(len(dictor4)/3)])
 diff_types_all(3)
