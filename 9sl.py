@@ -35,27 +35,19 @@ def kvadrat3(t=[]):
     print("Квадраты нечетных чисел",t)
 kvadrat3()
 #task4(for)
-a=10
-b=20
-i=0
-s=''
-s1=''
-for i in range(a):
-    if i==0 or i==a-1:
-        for j in range(b):
+def fun4(a,b,i=0):
+    for i in range(a):
+        if i==0 or i==a-1:
+            for j in range(b):
+                print('*',end='')
+        else:
             print('*',end='')
-    else:
-        print('*',end='')
-        for j in range(1,b-1):
-            print(' ',end='')
-        print('*',end='')
-    print()
+            for j in range(1,b-1):
+                print(' ',end='')
+            print('*',end='')
+        print()
+fun4(10,20)
 #task5(for)
-a=3
-b=7
-sum=0
-mult=1
-i=0
 def sumandmult5(a,b,sum=0,mult=1):
     for i in range(a,b):
         sum=+i
