@@ -39,3 +39,8 @@ def findwoef4(str, strinword, newstr):
         str=str[:indexofword]+newstr+str[indexofword+length:]
     print(str)
 findwoef4("Привет завтра вчера пока сегодня","сегодня","нет")
+
+def findofword5(str, strinword, newstr):
+    str=str.replace(strinword,newstr)
+    print(str)
+findofword5("Привет завтра вчера пока сегодня","сегодня","нет")
